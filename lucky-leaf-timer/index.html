@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lucky Leaf Timer - 집중을 도와주는 심플한 포모도로 타이머 앱">
+<title>Lucky Leaf Timer</title>
+<style>
+  :root {
+    --bg: #fdfaf6;
+    --bg-soft: #f6efe4;
+    --text: #3d2f24;
+    --sub: #7a6a5a;
+    --accent: #a67c52;
+    --accent-light: #d9b88c;
+    --card: #ffffff;
+    --border: #ece0d1;
+    --shadow: 0 8px 24px rgba(120, 90, 60, 0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #201a15;
+      --bg-soft: #2a221b;
+      --text: #f1e9df;
+      --sub: #baa891;
+      --accent: #d9b88c;
+      --accent-light: #a67c52;
+      --card: #2a221b;
+      --border: #3c3025;
+      --shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+  
+  .hero {
+    text-align: center;
+    padding: 70px 20px 50px;
+    background: linear-gradient(180deg, var(--bg-soft), var(--bg));
+  }
+  .hero .leaf { font-size: 56px; }
+  .hero h1 {
+    font-size: 34px;
+    margin: 14px 0 8px;
+    letter-spacing: -0.5px;
+  }
+  .hero p { color: var(--sub); font-size: 16px; max-width: 480px; margin: 0 auto; }
+  .badges { margin-top: 26px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+  .badge {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    color: var(--sub);
+    box-shadow: var(--shadow);
+  }
+  
+  .cta {
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--accent);
+    color: #fff;
+    padding: 14px 34px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+    transition: transform 0.15s ease;
+  }
+  .cta:hover { transform: translateY(-2px); }
+  
+  section { padding: 50px 0; }
+  section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+  }
+  .feature {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+  }
+  .feature .emoji { font-size: 28px; margin-bottom: 10px; }
+  .feature h3 { font-size: 17px; margin-bottom: 6px; }
+  .feature p { color: var(--sub); font-size: 14px; }
+  
+  footer {
+    text-align: center;
+    padding: 40px 20px 60px;
+    color: var(--sub);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+    margin-top: 30px;
+  }
+  footer a { color: var(--accent); text-decoration: none; margin: 0 8px; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="leaf">🍀</div>
+    <h1>Lucky Leaf Timer</h1>
+    <p>부담 없이, 예쁘게. 집중을 도와주는 심플한 포모도로 타이머</p>
+    <div class="badges">
+      <span class="badge">클라우드 백업</span>
+      <span class="badge">소셜 챌린지</span>
+      <span class="badge">광고 제거 옵션</span>
+    </div>
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.luckyleaf.timer" target="_blank" rel="noopener">Google Play에서 다운로드</a>
+  </div>
+
+  <div class="container">
+    <section>
+      <h2>주요 기능</h2>
+      <div class="grid">
+        <div class="feature">
+          <div class="emoji">⏱️</div>
+          <h3>포모도로 타이머</h3>
+          <p>집중/휴식 사이클을 자동으로 반복하며 생산성을 높입니다.</p>
+        </div>
+        <div class="feature">
+          <div class="emoji">☁️</div>
+          <h3>클라우드 백업</h3>
+          <p>기기 변경 시에도 집중 기록을 안전하게 복원할 수 있습니다.</p>
+        </div>
+        <div class="feature">
+          <div class="emoji">👥</div>
+          <h3>소셜 챌린지</h3>
+          <p>초대 코드로 친구와 그룹을 만들어 함께 집중합니다.</p>
+        </div>
+        <div class="feature">
+          <div class="emoji">📊</div>
+          <h3>연령대별 통계</h3>
+          <p>동일 연령대 평균과 비교하며 진행 상황을 분석합니다.</p>
+        </div>
+        <div class="feature">
+          <div class="emoji">⏳</div>
+          <h3>종료 시각 예약</h3>
+          <p>원하는 시각에 타이머가 자동으로 멈추도록 설정할 수 있습니다.</p>
+        </div>
+        <div class="feature">
+          <div class="emoji">📅</div>
+          <h3>스마트 히트맵</h3>
+          <p>시각화된 달력으로 집중도를 한눈에 확인합니다.</p>
+        </div>
+        <div class="feature">
+          <div class="emoji">🔔</div>
+          <h3>다양한 알림</h3>
+          <p>소리, 진동, 무음 중 선택하여 알림을 받습니다.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div>Lucky Leaf Timer · Developed by Heonix</div>
+    <div style="margin-top:10px;">
+      <a href="privacy-policy.html">개인정보처리방침</a>
+      <a href="https://github.com/Heo0321/lucky-leaf-timer" target="_blank">GitHub</a>
+      <a href="mailto:hsgdf123@gmail.com">문의</a>
+    </div>
+    <div style="margin-top:10px;">© 2026 Heonix. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
